@@ -3,6 +3,7 @@ package com.example.tetris
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -33,6 +34,10 @@ class MainActivity : AppCompatActivity() {
     private fun onBtnResetScoreClick(view:View){
         val preferences = AppPreferences(this)
         preferences.clearHingScore()
+        Snackbar.make(view, "Score successfully reset", Snackbar.LENGTH_SHORT)
+            .show()
+        tvHighScore?.text = "Hing score: ${preferences.getHingScore()}"
+
     }
 
     private fun onBtnExitClick(view: View){

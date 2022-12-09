@@ -28,7 +28,7 @@
          android:id="@+id/tv_hing_score"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:text="@string/hing_scrore_0"
+         android:text="@string/hing_scrore"
          android:textSize="20sp"
          android:layout_marginTop="@dimen/layout_margin_top"/>
       <LinearLayout
